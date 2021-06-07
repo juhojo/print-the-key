@@ -58,6 +58,7 @@ print-the-key
  ┣ .gitignore
  ┣ .prettierignore
  ┣ .prettierrc.json             # formatting config
+ ┣ commitlint.config.js         # commit linter config
  ┣ cypress.json                 # cypress config
  ┣ package.json                 # package config
  ┣ README.md                    # repository description
