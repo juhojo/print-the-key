@@ -1,0 +1,42 @@
+{
+  "name": "print-the-key",
+  "description": "Prints the key user pressed",
+  "version": "0.0.1",
+  "main": "index.js",
+  "keywords": [
+    "cucumber-js",
+    "cypress"
+  ],
+  "author": "Juho Jokela",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "snowpack dev",
+    "build": "snowpack build",
+    "open": "cypress open",
+    "test": "cypress run",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
+    "@snowpack/plugin-svelte": "^3.7.0",
+    "cypress": "^7.4.0",
+    "cypress-cucumber-preprocessor": "^4.1.2",
+    "husky": "^6.0.0",
+    "image-to-base64": "^2.2.0",
+    "lint-staged": "^11.0.0",
+    "prettier": "2.3.0",
+    "snowpack": "^3.3.7"
+  },
+  "dependencies": {
+    "cucumber-html-reporter": "^5.4.0",
+    "keyboard-css": "^1.2.4",
+    "svelte": "^3.38.2"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
+  }
+}

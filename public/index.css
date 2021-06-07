@@ -1,0 +1,26 @@
+:root {
+  --main-bg-color: #fafafa;
+  --main-text-color: #212121;
+  --spacing: 8px;
+}
+
+* {
+  position: relative;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.mt-1 {
+  margin-top: calc(var(--spacing) * 1);
+}
+
+.mt-2 {
+  margin-top: calc(var(--spacing) * 2);
+}
